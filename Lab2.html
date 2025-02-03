@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 2 by Joshua Fowah</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="box">
+        <header>
+            <h1>Registration</h1>
+            <p id="middle">Please enter the following information. Fields marked with an asterisk (<span id="needed1">*</span>) are required.</p>
+        </header>
+        <div id="inside">
+            <form method="post" action="javascript:void(0);">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="info-box" id="nameBox">
+                        <table>
+                            <tr>
+                                <td><span id="needed2">*</span>First Name:</td>
+                                <td><input type="text" name="firstName" id="firstName" required></td>
+                            </tr>
+                            <tr>
+                                <td><span id="needed3">*</span>Last Name:</td>
+                                <td><input type="text" name="lastName" id="lastName" required></td>
+                            </tr>
+                            <tr>
+                                <td><span id="needed4">*</span>Address:</td>
+                                <td><input type="text" name="address" id="address" size="40" required></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="info-box" id="addressBox">
+                        <table>
+                            <tr>
+                                <td><span id="needed5">*</span>City:</td>
+                                <td><input type="text" name="city" id="city" required></td>
+                            </tr>
+                            <tr>
+                                <td><span id="needed6">*</span>Province:</td>
+                                <td>
+                                    <select id="province" name="province" required>
+                                        <option value="" disabled selected>Select a province</option>
+                                        <option value="BC">British Columbia</option>
+                                        <option value="AB">Alberta</option>
+                                        <option value="SK">Saskatchewan</option>
+                                        <option value="MB">Manitoba</option>
+                                        <option value="ON">Ontario</option>
+                                        <option value="QC">Quebec</option>
+                                        <option value="NB">New Brunswick</option>
+                                        <option value="NS">Nova Scotia</option>
+                                        <option value="PE">Prince Edward Island</option>
+                                        <option value="NF">Newfoundland</option>
+                                        <option value="YK">Yukon</option>
+                                        <option value="NWT">Northwest Territories</option>
+                                        <option value="NU">Nunavut</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="info-box" id="addressesBox">
+                        <table>
+                            <tr>
+                                <td><span id="needed7">*</span>Postal Code:</td>
+                                <td><input type="text" name="postalCode" id="postalCode" size="6" maxlength="6" required></td>
+                            </tr>
+                            <tr>
+                                <td><span id="needed8">*</span>Email address:</td>
+                                <td><input type="email" name="email" id="email" required></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="info-box" id="contactBox">
+                        <table>
+                            <tr>
+                                <td>Home Phone:</td>
+                                <td><input type="tel" name="homePhone" id="homePhone"></td>
+                            </tr>
+                            <tr>
+                                <td>Work Phone:</td>
+                                <td><input type="tel" name="workPhone" id="workPhone"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="creditCard" id="visaCard" value="visa" required> <img src="images/visa.png" alt="Visa">
+                                <input type="radio" name="creditCard" id="masterCard" value="mastercard"> <img src="images/mastercard.png" alt="Mastercard">
+                                <input type="radio" name="creditCard" id="amexCard" value="amex"> <img src="images/amex.png" alt="Amex">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span id="needed9">*</span>Credit Card Number:</td>
+                            <td><input type="text" name="creditCardNumber" id="creditCardNumber" required></td>
+                        </tr>
+                        <tr>
+                            <td><span id="needed10">*</span>Expiry (MM/YY):</td>
+                            <td><input type="month" name="expiry" id="expiry" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agree and Submit</legend>
+                    <table>
+                        <tr>
+                            <td colspan="2"><input type="checkbox" id="terms" name="terms" value="yes" required>
+                                <label for="terms">Check if you agree with our <a href="#">Terms and Conditions</a></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit Registration"></td>
+                            <td><input type="reset" value="Reset Form"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <p>&copy;2013 CST8285. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
