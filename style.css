@@ -1,3 +1,4 @@
+
 /* CSS Document */
 
 /* 
@@ -51,19 +52,17 @@ legend {
 .info-box {
     border: 1px solid #ccc;
     margin-bottom: 5px;
-    padding: 10px;
     border-radius: 5px;
 }
 
 .info-box table {
-    border-collapse: separate;
-    border-spacing: 0;
-    width: 100%; 
+    border-collapse: separate; /* Keep this for separate borders */
+    border-spacing: 5px;  
 }
 
 .info-box table td {
     border: none;
-    padding: 5px;
+    padding: 5px; 
     vertical-align: top; 
 }
 
